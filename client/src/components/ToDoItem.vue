@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineComponent, Ref } from 'vue';
 
 defineProps({
     id: {type: Number, required:true, 
