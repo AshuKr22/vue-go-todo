@@ -25,7 +25,8 @@ const deleteItem = (id: number) => {
 </script>
 
 <template>
-    <div class="flex flex-col justify-center items-center w-full">
+    <div class=" w-full flex flex-col items-center mx-auto overflow-y-auto">
+      <div class="space-y-2 overflow-auto h-full">
       <ToDoItem
         v-for="item in props.items"
         :key="item.id"
@@ -37,4 +38,5 @@ const deleteItem = (id: number) => {
       />
 
     </div>
+  </div>
 </template>
